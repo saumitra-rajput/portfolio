@@ -84,15 +84,6 @@ const PROFILE = {
         
     ],
 
-    // DEBUG - Add this temporarily
-    console.log('Projects:', projectsData);
-    projectsData.forEach((project, index) => {
-        console.log(`Project ${index}:`, project.title);
-        console.log(`  imageUrl:`, project.imageUrl);
-        if (!project.imageUrl) {
-            console.error(`🚨 Project ${index} has NO imageUrl!`, project);
-        }
-    });
 
     // Timeline Configuration
     timeline: [
