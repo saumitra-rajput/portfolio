@@ -54,14 +54,14 @@ const PROFILE = {
         {
           title: 'Linux Administration (MyLinux)',
           description: 'Hands-on Linux administration project covering user and group management, permissions, process monitoring, package management, service configuration, networking basics, and shell scripting. Built as a structured lab environment to strengthen system-level troubleshooting and automation skills for DevOps.',
-          imageUrl: '/assets/images/linux.webp',
+          imageUrl: 'https://github.com/saumitra-rajput/portfolio/blob/dev/assets/images/linux.webp',
           tags: ['Linux', 'User Management', 'Networking', 'Linux Admin', 'Troubleshooting'],
           link: 'https://github.com/saumitra-rajput/my-linux'
         },
         {
           title: 'Shell Scripting',
           description: 'Developed a modular Bash script to monitor system health including CPU usage, memory consumption, disk utilization, uptime, and top resource-intensive processes. Implemented strict error handling using set -euo pipefail and structured functions for production-ready automation.',
-          imageUrl: '/assets/images/bash.webp',
+          imageUrl: 'https://github.com/saumitra-rajput/portfolio/blob/dev/assets/images/bash.webp',
           tags: ['Bash Scripting', 'Linux', 'Automation', 'System Monitoring'],
           link: 'https://github.com/saumitra-rajput/bash-scripting'
         },
@@ -74,7 +74,7 @@ const PROFILE = {
         },
         {
           category: 'certification',
-          imageUrl: '/assets/images/msc.webp',
+          imageUrl: 'https://github.com/saumitra-rajput/portfolio/blob/dev/assets/images/msc.webp',
           title: 'Microsoft Azure Certifications (5x Certified) (2xGitHub Certified)',
           company: 'Microsoft',
           description: 'Earned multiple Microsoft Azure certifications validating expertise in Azure administration, AI engineering, and cloud services. Demonstrates strong understanding of Azure infrastructure, security, identity management, and cloud best practices.',
