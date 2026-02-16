@@ -1,36 +1,118 @@
-body {
-    font-family: Arial, sans-serif;
+@charset "utf-8";
+
+* {
     margin: 0;
-    background-color: #f5f7fa;
-    color: #333;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-header {
-    text-align: center;
-    padding: 40px;
-    background-color: #0078D4;
-    color: white;
+/* ======================================================
+   AZURE CORPORATE THEME
+====================================================== */
+:root {
+
+    --glass-bg: rgba(255, 255, 255, 0.06);
+    --glass-border: rgba(0, 120, 212, 0.25);
+
+    --accent-blue: #0078D4;       /* Azure Blue */
+    --accent-blue-dark: #005A9E;  /* Dark Azure */
+    --accent-glow: rgba(0, 120, 212, 0.35);
+
+    --text-primary: #ffffff;
+    --text-secondary: rgba(255, 255, 255, 0.85);
+    --text-tertiary: rgba(255, 255, 255, 0.6);
 }
 
-.buttons a {
-    margin: 10px;
-    padding: 10px 20px;
-    background: white;
-    color: #0078D4;
+body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+
+    background: linear-gradient(
+        135deg,
+        #0f172a 0%,
+        #0b1e33 25%,
+        #001f3f 50%,
+        #0b1e33 75%,
+        #0f172a 100%
+    );
+
+    background-attachment: fixed;
+    color: var(--text-primary);
+    overflow-x: hidden;
+    min-height: 100vh;
+    line-height: 1.6;
+}
+
+p a {
+    color: var(--accent-blue);
     text-decoration: none;
-    border-radius: 5px;
 }
 
-section {
-    padding: 40px;
-    max-width: 900px;
-    margin: auto;
+/* ======================================================
+   NAVIGATION
+====================================================== */
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 1rem 0;
+    transition: all 0.3s ease;
+    background: rgba(10, 25, 45, 0.85);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--glass-border);
 }
 
-.project-card {
-    background: white;
-    padding: 20px;
-    margin-top: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+nav.scrolled {
+    background: rgba(10, 25, 45, 0.95);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    border-bottom: 1px solid var(--accent-blue);
 }
+
+.logo-icon {
+    background: linear-gradient(135deg, var(--accent-blue), var(--accent-blue-dark));
+    color: #fff;
+    box-shadow: 0 4px 12px var(--accent-glow);
+}
+
+.nav-links a:hover {
+    color: var(--accent-blue);
+    border-color: var(--accent-blue);
+    background: rgba(0, 120, 212, 0.1);
+}
+
+.nav-links a.active {
+    color: var(--accent-blue);
+    background: rgba(0, 120, 212, 0.15);
+    border-color: var(--accent-blue);
+    box-shadow: 0 4px 15px var(--accent-glow);
+}
+
+/* ======================================================
+   HERO SECTION
+====================================================== */
+
+.shape-1 {
+    background: radial-gradient(circle, rgba(0, 120, 212, 0.35) 0%, transparent 70%);
+}
+
+.shape-2 {
+    background: radial-gradient(circle, rgba(0, 90, 158, 0.35) 0%, transparent 70%);
+}
+
+.shape-3 {
+    background: radial-gradient(circle, rgba(0, 120, 212, 0.25) 0%, transparent 70%);
+}
+
+.cta-primary {
+    background: linear-gradient(135deg, var(--accent-blue), var(--accent-blue-dark));
+    color: #fff;
+    box-shadow: 0 8px 25px var(--accent-glow);
+}
+
+.cta-secondary:hover {
+    background: rgba(0, 120, 212, 0.12);
+}
+
+/* ======================================================
+   SKILL
