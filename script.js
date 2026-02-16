@@ -54,7 +54,7 @@ const PROFILE = {
         {
           title: 'Linux Administration (MyLinux)',
           description: 'Hands-on Linux administration project covering user and group management, permissions, process monitoring, package management, service configuration, networking basics, and shell scripting. Built as a structured lab environment to strengthen system-level troubleshooting and automation skills for DevOps.',
-          imageUrl: 'https://github.com/saumitra-rajput/portfolio/blob/dev/assets/images/linux.webp',
+          imageUrl: 'https://github.com/saumitra-rajput/portfolio/blob/dev/assets/images/linux.webp', 
           tags: ['Linux', 'User Management', 'Networking', 'Linux Admin', 'Troubleshooting'],
           link: 'https://github.com/saumitra-rajput/my-linux'
         },
