@@ -39,8 +39,8 @@ const PROFILE = {
             { icon: '<i class="fa-solid fa-dharmachakra"></i>', name: 'K8s' }
         ],
         list: [
-            { title: 'AWS Cloud', desc: 'EC2, S3, IAM, VPC, Load Balancers', percent: '85%' },
             { title: 'Microsoft Azure Cloud', desc: 'VMs, Storage Accounts, VNets, NSG, Azure AD, App Services', percent: '85%' },
+            { title: 'AWS Cloud', desc: 'EC2, S3, IAM, VPC, Load Balancers', percent: '85%' },   
             { title: 'Linux Administration', desc: 'Users, Permissions, Processes, Networking, Services, Monitoring', percent: '90%' },
             { title: 'DevOps & Automation', desc: 'GitHub, CI/CD Concepts, Bash Scripting, YAML, Azure DevOps Basics', percent: '82%' },
             { title: 'Containers & Virtualization', desc: 'Docker, Docker Compose, Images, Volumes, Networking', percent: '80%' },
@@ -51,25 +51,25 @@ const PROFILE = {
     // Projects Configuration
     projects: [
         {
-          title: 'System Health Monitoring & Automation',
-          description: 'Developed a production-ready Bash script to monitor CPU, memory, disk usage, uptime, and top resource-consuming processes. Implemented modular functions with strict error handling (set -euo pipefail) to ensure reliability and automation readiness.',
-          imageUrl: 'assets/images/system-health.webp',
-          tags: ['Bash Scripting', 'Linux', 'Automation', 'Monitoring'],
-          link: 'https://github.com/your-github-username/system-health-monitor'
+          title: 'Linux Administration (MyLinux)',
+          description: 'Hands-on Linux administration project covering user and group management, permissions, process monitoring, package management, service configuration, networking basics, and shell scripting. Built as a structured lab environment to strengthen system-level troubleshooting and automation skills for DevOps.',
+          imageUrl: 'assets/images/linux-lab.webp',
+          tags: ['Linux', 'User Management', 'Networking', 'Linux Admin', 'Troubleshooting'],
+          link: 'https://github.com/saumitra-rajput/my-linux'
         },
         {
-          title: 'Two-Tier Containerized Application',
-          description: 'Containerized a Flask-based web application with a MySQL database using Docker and Docker Compose. Configured persistent volumes, secure networking, and service isolation to ensure reliable multi-container deployment.',
-          imageUrl: 'assets/images/two-tier-flask-app.webp',
-          tags: ['Docker', 'Docker Compose', 'Containers', 'Networking'],
-          link: 'https://github.com/your-github-username/two-tier-flask-app'
+          title: 'Automated System Health Monitoring Script',
+          description: 'Developed a modular Bash script to monitor system health including CPU usage, memory consumption, disk utilization, uptime, and top resource-intensive processes. Implemented strict error handling using set -euo pipefail and structured functions for production-ready automation.',
+          imageUrl: 'assets/images/bash-system-health.webp',
+          tags: ['Bash Scripting', 'Linux', 'Automation', 'System Monitoring'],
+          link: 'https://github.com/saumitra-rajput/bash-scripting'
         },
         {
           title: 'Azure Cloud Infrastructure Deployment',
           description: 'Provisioned and managed Azure Virtual Machines, Storage Accounts, VNets, and NSGs. Configured secure inbound rules and deployed a web server (Nginx) to host applications while following cloud security best practices.',
           imageUrl: 'assets/images/azure-infra.webp',
-          tags: ['Microsoft Azure', 'VMs', 'Networking', 'Cloud Security'],
-          link: 'https://github.com/your-github-username/azure-infrastructure-project'
+          tags: ['Microsoft Azure', 'VMs', 'Networking', 'Beginner-Advance-Expert'],
+          link: 'https://github.com/saumitra-rajput/my-azure'
         }
 
         
