@@ -73,9 +73,9 @@ const PROFILE = {
           link: 'https://github.com/saumitra-rajput/my-azure'
         },
         {
-          imageUrl: '/assets/images/cert.webp',
           title: 'Microsoft Azure Certifications (5x Certified) (2xGitHub Certified)',
           description: 'Earned multiple Microsoft Azure certifications validating expertise in Azure administration, AI engineering, and cloud services. Demonstrates strong understanding of Azure infrastructure, security, identity management, and cloud best practices.',
+          imageUrl: '/assets/images/cert.webp',
           tags: ['AZ-104', 'AZ-500', 'AZ-900', 'AI-900', 'SC-900', 'GH-900', 'GH-200'],
           link: 'https://learn.microsoft.com/en-us/users/saumitrarajput-5854/credentials/certifications'
 
