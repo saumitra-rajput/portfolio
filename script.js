@@ -68,7 +68,7 @@ const PROFILE = {
         {
           title: 'Azure Cloud Infrastructure Deployment',
           description: 'Provisioned and managed Azure Virtual Machines, Storage Accounts, VNets, and NSGs. Configured secure inbound rules and deployed a web server (Nginx) to host applications while following cloud security best practices.',
-          imageUrl: '/assets/images/azure.webp',
+          imageUrl: 'https://github.com/saumitra-rajput/portfolio/blob/dev/assets/images/azure.webp',
           tags: ['Microsoft Azure', 'VMs', 'Networking', 'Beginner-Advance-Expert'],
           link: 'https://github.com/saumitra-rajput/my-azure'
         },
