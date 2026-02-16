@@ -23,7 +23,8 @@ const PROFILE = {
         linkedin: "https://www.linkedin.com/in/saumitra-rajput-18268120a/",
         github: "https://github.com/saumitra-rajput",
         linkhub: "https://saumitra-rajput.github.io/portfolio/",
-        resume: "assets/docs/saumitra-rajput.pdf"
+        resume: "assets/docs/saumitra-rajput.pdf",
+        certifications: "https://learn.microsoft.com/en-us/users/saumitrarajput-5854/credentials/certifications"
     },
 
     // Skills Configuration
@@ -40,10 +41,10 @@ const PROFILE = {
         ],
         list: [
             { title: 'Microsoft Azure Cloud', desc: 'VMs, Storage Accounts, VNets, NSG, Azure AD, App Services', percent: '85%' },
-            { title: 'AWS Cloud', desc: 'EC2, S3, IAM, VPC, Load Balancers', percent: '85%' },   
+            { title: 'AWS Cloud', desc: 'EC2, S3, IAM, VPC', percent: '60%' },   
             { title: 'Linux Administration', desc: 'Users, Permissions, Processes, Networking, Services, Monitoring', percent: '90%' },
-            { title: 'DevOps & Automation', desc: 'GitHub, CI/CD Concepts, Bash Scripting, YAML, Azure DevOps Basics', percent: '82%' },
-            { title: 'Containers & Virtualization', desc: 'Docker, Docker Compose, Images, Volumes, Networking', percent: '80%' },
+            { title: 'DevOps & Automation', desc: 'GitHub, CI/CD Concepts, Bash Scripting, YAML, Azure DevOps Basics', percent: '72%' },
+            { title: 'Containers & Virtualization', desc: 'Docker, Docker Compose, Images, Volumes, Networking', percent: '60%' },
             { title: 'Infrastructure & System Management', desc: 'Server Setup, Nginx, Apache, System Health Scripts, Troubleshooting', percent: '84%' }
         ]
     },
@@ -70,6 +71,17 @@ const PROFILE = {
           imageUrl: 'assets/images/azure-infra.webp',
           tags: ['Microsoft Azure', 'VMs', 'Networking', 'Beginner-Advance-Expert'],
           link: 'https://github.com/saumitra-rajput/my-azure'
+        },
+        {
+          category: 'certification',
+          icon: '🏅',
+          year: 'Microsoft Certified',
+          title: 'Microsoft Azure Certifications (5x Certified) (2xGitHub Certified)',
+          company: 'Microsoft',
+          description: 'Earned multiple Microsoft Azure certifications validating expertise in Azure administration, AI engineering, and cloud services. Demonstrates strong understanding of Azure infrastructure, security, identity management, and cloud best practices.',
+          tags: ['AZ-104', 'AZ-500', 'AZ-900', 'AI-900', 'SC-900', 'GH-900', 'GH-200'],
+          link: 'https://learn.microsoft.com/en-us/users/saumitrarajput-5854/credentials/certifications'
+
         }
 
         
@@ -83,7 +95,7 @@ const PROFILE = {
             year: '2018 – 2021',
             title: 'Bachelor of Arts, (2018-2021)',
             company: 'Lucknow University',
-            description: 'Developed strong analytical, communication, and critical thinking skills through academic study, while independently building technical expertise in Linux, Cloud Computing, and DevOps technologies.'
+            description: 'Developed strong analytical, communication, and critical thinking skills through academic study, while independently building technical expertise in Linux, Cloud Computing, and Python.'
         },
         {
             category: 'work',
@@ -100,17 +112,17 @@ const PROFILE = {
             year: 'Nov 2022 – Feb 2026',
             title: 'Analyst – Cloud Engineer (Tenet Healthcare Project)',
             company: 'HCL Technologies',
-            description: 'Managed and supported enterprise-scale Azure cloud infrastructure including Virtual Machines, VNets, Load Balancers, NSGs, Azure SQL VMs, DNS, Policies, and Subscriptions. Worked extensively on Azure IAM (Azure AD, RBAC, PIM, Access Policies) to ensure secure access governance. Configured VNET peering (regional & global), P2S/S2S VPN, Application Gateway, and Availability Sets. Performed backup, disaster recovery, and cross-region replication for critical workloads. Resolved cloud and application incidents using ServiceNow and collaborated with development teams for provisioning and environment support using Azure CLI.',
-            skills: ['Microsoft Azure', 'Azure AD & RBAC', 'Azure Networking', 'VPN & VNET Peering', 'Backup & DR', 'Azure CLI', 'ServiceNow']
+            description: 'Managed and supported enterprise-scale Azure cloud infrastructure including Virtual Machines, VNets, Load Balancers, NSGs, Azure SQL VMs, DNS, Policies, and Subscriptions. Worked extensively on Azure IAM (Azure AD, RBAC, PIM, Access Policies, Storage, VMs) to ensure secure access governance. Configured VNET peering (regional & global), P2S/S2S VPN, Application Gateway, and Availability Sets. Performed backup, disaster recovery, and cross-region replication for critical workloads. Resolved cloud and application incidents using ServiceNow and collaborated with development teams for provisioning and environment support using Azure CLI.',
+            skills: ['Microsoft Azure', 'Azure AD & RBAC', 'Azure Storage and Security', 'VM,VNET,NSG,WAF,ASG', 'IAM & Access Policy', 'Azure CLI', 'ServiceNow']
         },                  
         {
             category: 'Upskilling',
             icon: '☁️',
             year: '2026 – Present',
-            title: 'Learning DevOps with Train with Shubham',
+            title: 'Learning DevOps - Train with Shubham',
             company: 'Train with Shubham',
             description: 'Currently building expertise in Docker, GitHub, Kubernetes, Prometheus, Ansible, Terraform and Python for DevOps. Expanding knowledge toward automation, infrastructure as code, monitoring, and exploring Agentic AI applications in DevOps workflows.',
-            skills: ['Linux', 'Bash Scripting', 'Docker', 'Kubernetes', 'Ansible', 'Python', 'Monitoring', 'AWS EC2']
+            skills: ['Linux', 'Bash Scripting', 'Docker', 'Kubernetes', 'Ansible', 'Python', 'Monitoring', 'Azure','AWS EC2', 'GitHub']
         }
 
 
