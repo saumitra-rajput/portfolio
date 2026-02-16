@@ -61,20 +61,20 @@ const PROFILE = {
         {
           title: 'Shell Scripting',
           description: 'Developed a modular Bash script to monitor system health including CPU usage, memory consumption, disk utilization, uptime, and top resource-intensive processes. Implemented strict error handling using set -euo pipefail and structured functions for production-ready automation.',
-          imageUrl: 'https://github.com/saumitra-rajput/portfolio/blob/dev/assets/images/bash.webp',
+          imageUrl: '/assets/images/bash.webp',
           tags: ['Bash Scripting', 'Linux', 'Automation', 'System Monitoring'],
           link: 'https://github.com/saumitra-rajput/bash-scripting'
         },
         {
           title: 'Azure Cloud Infrastructure Deployment',
           description: 'Provisioned and managed Azure Virtual Machines, Storage Accounts, VNets, and NSGs. Configured secure inbound rules and deployed a web server (Nginx) to host applications while following cloud security best practices.',
-          imageUrl: 'https://github.com/saumitra-rajput/portfolio/blob/dev/assets/images/azure.webp',
+          imageUrl: '/assets/images/azure.webp',
           tags: ['Microsoft Azure', 'VMs', 'Networking', 'Beginner-Advance-Expert'],
           link: 'https://github.com/saumitra-rajput/my-azure'
         },
         {
           category: 'certification',
-          imageUrl: 'https://github.com/saumitra-rajput/portfolio/blob/dev/assets/images/msc.webp',
+          imageUrl: '/assets/images/msc.webp',
           title: 'Microsoft Azure Certifications (5x Certified) (2xGitHub Certified)',
           company: 'Microsoft',
           description: 'Earned multiple Microsoft Azure certifications validating expertise in Azure administration, AI engineering, and cloud services. Demonstrates strong understanding of Azure infrastructure, security, identity management, and cloud best practices.',
