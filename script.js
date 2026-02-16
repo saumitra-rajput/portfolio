@@ -23,7 +23,7 @@ const PROFILE = {
         linkedin: "https://www.linkedin.com/in/saumitra-rajput-18268120a/",
         github: "https://github.com/saumitra-rajput",
         linkhub: "https://saumitra-rajput.github.io/portfolio/",
-        resume: "assets/docs/resume/Saumitra Rajput.pdf"
+        resume: "assets/docs/saumitra-rajput.pdf"
     },
 
     // Skills Configuration
