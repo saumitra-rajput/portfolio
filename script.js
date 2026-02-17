@@ -198,6 +198,7 @@ class ProfileRenderer {
     }
 
     /* -------- Projects Renderer -------- */
+    /*
     renderProjects() {
         const grid = document.getElementById('portfolioGrid');
         if (!grid) return;
@@ -221,6 +222,54 @@ class ProfileRenderer {
             </a>
         `).join('');
     }
+    */
+
+    /* -------- Projects Renderer -------- */
+    renderProjects() {
+        const grid = document.getElementById('portfolioGrid');
+        console.log('renderProjects called');
+        console.log('Grid element:', grid);
+        console.log('Projects data:', this.config.projects);
+        
+        if (!grid) {
+            console.error('❌ portfolioGrid not found!');
+            return;
+        }
+
+        if (!this.config.projects || this.config.projects.length === 0) {
+            console.error('❌ No projects found in config!');
+            return;
+        }
+
+        console.log(`Rendering ${this.config.projects.length} projects`);
+
+        grid.innerHTML = this.config.projects.map((p, index) => {
+            console.log(`Project ${index}:`, p.title);
+            console.log(`  imageUrl:`, p.imageUrl);
+            
+            return `
+            <a href="${p.link}" target="_blank" class="portfolio-link">
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="${p.imageUrl}" 
+                            alt="${p.title}" 
+                            loading="lazy"
+                            onerror="console.error('Image failed to load:', '${p.imageUrl}', 'for project:', '${p.title}')">
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>${p.title}</h3>
+                        <div class="spacer"></div>
+                        <p>${p.description}</p>
+                        <div class="spacer"></div>
+                        <div class="portfolio-tags">
+                            ${p.tags.map(t => `<span class="tag">${t}</span>`).join('')}
+                        </div>
+                    </div>
+                </div>
+            </a>
+        `}).join('');
+    }
+
 
     /* -------- Timeline Renderer -------- */
     renderTimeline(filter = 'all') {
