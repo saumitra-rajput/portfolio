@@ -1144,6 +1144,7 @@ section {
     position: relative;
     overflow: hidden;
     flex-shrink: 0;
+    z-index: 1; /*update*/
 }
 
 .portfolio-image img {
@@ -1151,6 +1152,8 @@ section {
     height: 100%;
     object-fit: cover;
     display: block;
+    position: relative;
+    z-index: 2;
 }
 
 .portfolio-image::after {
@@ -1163,6 +1166,8 @@ section {
         rgba(0,0,0,0.7) 100%);
     opacity: 0;
     transition: opacity 0.3s ease;
+    z-index: 3;
+    pointer-events: none;
 }
 
 .portfolio-card:hover .portfolio-image::after {
