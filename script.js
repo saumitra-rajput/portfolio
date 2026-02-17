@@ -108,16 +108,7 @@ const PROFILE = {
             skills: ['Microsoft Azure', 'Azure AD & RBAC', 'Azure Policy', 'VNet Peering', 'VPN', 'Azure CLI', 'ServiceNow']
         },
         {
-            category: 'education',
-            icon: '☁️',
-            year: '2024',
-            title: 'Microsoft Azure Certifications',
-            company: 'Microsoft',
-            description: 'Earned 5x Microsoft Azure certifications: AZ-104 (Administrator), AZ-500 (Security), AZ-900 (Fundamentals), AI-900 (AI Fundamentals), SC-900 (Compliance)',
-            skills: ['Azure Admin', 'Azure Security', 'Cloud Concepts', 'AI', 'Compliance']
-        },
-        {
-            category: 'project',
+            category: 'Upskilling',
             icon: '🚀',
             year: '2026 – Present',
             title: 'Learning DevOps',
