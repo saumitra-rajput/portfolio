@@ -54,28 +54,28 @@ const PROFILE = {
         {
           title: 'Linux Administration (MyLinux)',
           description: 'Hands-on Linux administration project covering user and group management, permissions, process monitoring, package management, service configuration, networking basics, and shell scripting. Built as a structured lab environment to strengthen system-level troubleshooting and automation skills for DevOps.',
-          imageUrl: 'assets/images/linux.webp', 
+          imageUrl: 'https://github.com/saumitra-rajput/portfolio/raw/dev/assets/images/linux.webp', 
           tags: ['Linux', 'User Management', 'Networking', 'Linux Admin', 'Troubleshooting'],
           link: 'https://github.com/saumitra-rajput/my-linux'
         },
         {
           title: 'Shell Scripting',
           description: 'Developed a modular Bash script to monitor system health including CPU usage, memory consumption, disk utilization, uptime, and top resource-intensive processes. Implemented strict error handling using set -euo pipefail and structured functions for production-ready automation.',
-          imageUrl: 'assets/images/bash.webp',
+          imageUrl: 'https://github.com/saumitra-rajput/portfolio/raw/dev/assets/images/bash.webp',
           tags: ['Bash Scripting', 'Linux', 'Automation', 'System Monitoring'],
           link: 'https://github.com/saumitra-rajput/bash-scripting'
         },
         {
           title: 'Azure Cloud Infrastructure Deployment',
           description: 'Provisioned and managed Azure Virtual Machines, Storage Accounts, VNets, and NSGs. Configured secure inbound rules and deployed a web server (Nginx) to host applications while following cloud security best practices.',
-          imageUrl: 'assets/images/azure.webp',
+          imageUrl: 'https://github.com/saumitra-rajput/portfolio/raw/dev/assets/images/azure.webp',
           tags: ['Microsoft Azure', 'VMs', 'Networking', 'Beginner-Advance-Expert'],
           link: 'https://github.com/saumitra-rajput/my-azure'
         },
         {
           title: 'Microsoft Azure Certifications (5x Certified) (2xGitHub Certified)',
           description: 'Earned multiple Microsoft Azure certifications validating expertise in Azure administration, AI engineering, and cloud services. Demonstrates strong understanding of Azure infrastructure, security, identity management, and cloud best practices.',
-          imageUrl: 'assets/images/cert.webp',
+          imageUrl: 'https://github.com/saumitra-rajput/portfolio/raw/dev/assets/images/cert.webp',
           tags: ['AZ-104', 'AZ-500', 'AZ-900', 'AI-900', 'SC-900', 'GH-900', 'GH-200'],
           link: 'https://learn.microsoft.com/en-us/users/saumitrarajput-5854/credentials/certifications'
 
