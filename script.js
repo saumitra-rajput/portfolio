@@ -181,7 +181,11 @@ class ProfileRenderer {
                     <div class="skill-icon">${s.icon}</div>
                     <div class="skill-name">${s.name}</div>
                 </div>
-            `).join('') + `<div class="skills-center">☁</div>`;
+            `).join('');
+           circle.insertAdjacentHTML(
+         "beforeend",
+            `<div class="skills-center">☁</div>`
+           );
         }
 
         if (list) {
