@@ -756,7 +756,7 @@ section {
     position: relative;
     width: 400px;
     height: 400px;
-    animation: rotate-slow 30s linear infinite;
+    /* animation: rotate-slow 30s linear infinite; */
 }
 
 @keyframes rotate-slow {
