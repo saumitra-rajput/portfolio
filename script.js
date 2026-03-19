@@ -176,12 +176,18 @@ class ProfileRenderer {
         const list = document.getElementById('skillsList');
 
         if (circle) {
-            circle.innerHTML = this.config.skills.visual.map(s => `
-                <div class="skill-node">
-                    <div class="skill-icon">${s.icon}</div>
-                    <div class="skill-name">${s.name}</div>
-                </div>
-            `).join('') +`<div class="skills-center">☁</div>`;
+            const nodes = this.config.skills.visual;
+            const angleStep = 360 / nodes.length;
+            circle.innerHTML = nodes.map((s, i) => {
+                const startDeg = Math.round(i * angleStep);
+                return `
+                <div class="skill-node" style="--orbit-start:${startDeg}deg">
+                    <div class="node-inner">
+                        <div class="skill-icon">${s.icon}</div>
+                        <div class="skill-name">${s.name}</div>
+                    </div>
+                </div>`;
+            }).join('') + `<div class="skills-center">☁</div>`;
         }
 
         if (list) {
