@@ -746,7 +746,7 @@ section {
 
 .skills-visual {
     position: relative;
-    height: 500px;
+    height: 580px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -754,21 +754,52 @@ section {
 
 .skills-circle {
     position: relative;
-    width: 400px;
-    height: 400px;
-    /* animation: rotate-slow 30s linear infinite; */
+    width: 520px;
+    height: 520px;
 }
 
-@keyframes rotate-slow {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
+/* ── Orbital system ──────────────────────────────────────────
+   Each .skill-node is a "spoke" anchored at the circle centre.
+   The spoke rotates (orbit-spin), carrying the node outward.
+   The node itself counter-rotates so icons always stay upright.
+   --orbit-start  : initial angle offset per node (evenly spread)
+   --orbit-radius : distance from centre to node centre
+   ──────────────────────────────────────────────────────────── */
+
+@keyframes orbit-spin {
+    from { transform: rotate(var(--orbit-start)); }
+    to   { transform: rotate(calc(var(--orbit-start) + 360deg)); }
 }
 
-/* Skill Nodes */
+
+/* Spoke wrapper — invisible, sits at circle centre, just rotates */
 .skill-node {
+    position: absolute;
+    /* Place the spoke origin at the exact centre of .skills-circle */
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    /* Defaults overridden per-child below */
+    --orbit-radius: 220px;
+    --orbit-start: 0deg;
+    --orbit-duration: 18s;
+    transform-origin: 0 0;
+    animation: orbit-spin var(--orbit-duration) linear infinite;
+}
+
+/* The visible bubble — sits at the end of the spoke */
+.skill-node::before {
+    display: none; /* not used */
+}
+
+/* Inner content wrapper — translated outward, counter-rotated */
+.skill-node .node-inner {
     position: absolute;
     width: 100px;
     height: 100px;
+    top: calc(-1 * var(--orbit-radius));
+    left: -50px;   /* centre the 100 px bubble on the spoke tip */
     background: #000;
     border: 2px solid var(--theme-primary);
     border-radius: 50%;
@@ -777,66 +808,53 @@ section {
     align-items: center;
     justify-content: center;
     box-shadow: 0 0 15px var(--accent-glow);
-    transition: all 0.3s ease;
-    animation: counter-rotate 30s linear infinite;
     cursor: pointer;
+    transition: background 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    /* Counter-rotate so the content stays upright */
+    animation: node-counter-spin var(--orbit-duration) linear infinite;
 }
 
-.skill-node:hover {
-    transform: scale(1.2);
+@keyframes node-counter-spin {
+    from { transform: rotate(calc(-1 * var(--orbit-start))); }
+    to   { transform: rotate(calc(-360deg + (-1 * var(--orbit-start)))); }
+}
+
+.skill-node .node-inner:hover {
     background: var(--theme-primary);
     box-shadow: 0 0 30px var(--accent-glow);
     border-color: #fff;
+    transform: rotate(calc(-1 * var(--orbit-start))) scale(1.15); /* keep upright + scale */
 }
 
-.skill-node i, .skill-node .skill-icon {
+.skill-node .skill-icon {
     font-size: 2.2rem;
     color: var(--theme-primary);
     margin-bottom: 5px;
-    transition: 0.3s;
+    transition: color 0.3s;
+    line-height: 1;
 }
 
 .skill-node .skill-name {
-    font-size: 0.75rem;
+    font-size: 0.7rem;
     font-weight: 700;
     color: #fff;
     text-transform: uppercase;
+    transition: color 0.3s;
 }
 
-.skill-node:hover i, .skill-node:hover .skill-name {
+.skill-node .node-inner:hover .skill-icon,
+.skill-node .node-inner:hover .skill-name {
     color: #000;
 }
 
-@keyframes counter-rotate {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(-360deg); }
-}
-
-/* Skill Node Positions */
-.skill-node:nth-child(1) { 
-    top: 0; left: 50%; 
-    transform: translateX(-50%) translateY(-50%); 
-}
-.skill-node:nth-child(2) { 
-    top: 25%; right: 0; 
-    transform: translateX(50%) translateY(-50%); 
-}
-.skill-node:nth-child(3) { 
-    top: 75%; right: 0; 
-    transform: translateX(50%) translateY(-50%); 
-}
-.skill-node:nth-child(4) { 
-    bottom: 0; left: 50%; 
-    transform: translateX(-50%) translateY(50%); 
-}
-.skill-node:nth-child(5) { 
-    top: 75%; left: 0; 
-    transform: translateX(-50%) translateY(-50%); 
-}
-.skill-node:nth-child(6) { 
-    top: 25%; left: 0; 
-    transform: translateX(-50%) translateY(-50%); 
-}
+/* ── Even angle offsets for N nodes (JS sets --orbit-start via inline style) ── */
+/* Fallback for 6 nodes in case JS doesn't run */
+.skill-node:nth-child(1) { --orbit-start:   0deg; }
+.skill-node:nth-child(2) { --orbit-start:  60deg; }
+.skill-node:nth-child(3) { --orbit-start: 120deg; }
+.skill-node:nth-child(4) { --orbit-start: 180deg; }
+.skill-node:nth-child(5) { --orbit-start: 240deg; }
+.skill-node:nth-child(6) { --orbit-start: 300deg; }
 
 .skills-center {
     position: absolute;
@@ -1555,14 +1573,16 @@ footer {
     }
     
     .skills-visual {
-        height: 400px;
+        height: 480px;
         margin: 0 auto;
     }
     
     .skills-circle {
-        width: 350px;
-        height: 350px;
+        width: 440px;
+        height: 440px;
     }
+    .skill-node { --orbit-radius: 185px; }
+    .skill-node .node-inner { width: 85px; height: 85px; left: -42.5px; }
     
     .contact-grid-expansive {
         grid-template-columns: 1fr;
@@ -1665,22 +1685,26 @@ footer {
     
     /* Skills */
     .skills-circle {
-        width: 280px;
-        height: 280px;
+        width: 340px;
+        height: 340px;
     }
     
     .skill-node {
-        width: 80px;
-        height: 80px;
+        --orbit-radius: 142px;
+    }
+
+    .skill-node .node-inner {
+        width: 70px;
+        height: 70px;
+        left: -35px;
     }
     
-    .skill-node i,
     .skill-node .skill-icon {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
     
     .skill-node .skill-name {
-        font-size: 0.7rem;
+        font-size: 0.6rem;
     }
     
     .skills-center {
@@ -1800,13 +1824,18 @@ footer {
     }
     
     .skills-circle {
-        width: 240px;
-        height: 240px;
+        width: 290px;
+        height: 290px;
     }
     
     .skill-node {
-        width: 70px;
-        height: 70px;
+        --orbit-radius: 120px;
+    }
+
+    .skill-node .node-inner {
+        width: 60px;
+        height: 60px;
+        left: -30px;
     }
 }
 
