@@ -1,5 +1,7 @@
 # 🌩️ Saumitra Rajput – Azure Cloud Engineer Portfolio
 
+
+
 Welcome to my professional portfolio website.
 
 🔗 Live Website: https://saumitra-rajput.github.io/portfolio/
@@ -77,4 +79,3 @@ Repo: https://github.com/saumitra-rajput/bash-scripting
 ---
 
 > Passionate about cloud infrastructure, automation, and continuous learning in DevOps practices.
-
