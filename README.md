@@ -12,7 +12,7 @@ Welcome to my professional portfolio website.
 
 I am 5x Azure-certified Cloud Engineer with 2+ years of enterprise experience supporting production healthcare workloads in Microsoft Azure environments.
 
-I specialise in:
+I specialize in:
 
 - Azure Virtual Machines & Networking
 - Identity & Access Management (RBAC, PIM, Azure AD)
@@ -31,7 +31,8 @@ I specialise in:
 - **Microsoft Certified: Azure Fundamentals (AZ-900)** — [View Credential](https://learn.microsoft.com/en-us/users/saumitrarajput-5854/credentials?tab=credentials-tab)
 - **Microsoft Certified: Security, Compliance & Identity Fundamentals (SC-900)** — [View Credential](https://learn.microsoft.com/en-us/users/saumitrarajput-5854/credentials?tab=credentials-tab)
 - **Microsoft Certified: Azure AI Fundamentals (AI-900)** — [View Credential](https://learn.microsoft.com/en-us/users/saumitrarajput-5854/credentials?tab=credentials-tab)
-
+- **GitHub Certified: GitHub Foundations (GH-900)** — [View Credential](https://learn.microsoft.com/en-us/users/saumitrarajput-5854/credentials?tab=credentials-tab)
+- **GitHub Certified: GitHub Actions (GH-200)** — [View Credential](https://learn.microsoft.com/en-us/users/saumitrarajput-5854/credentials?tab=credentials-tab)
 
 ---
 
@@ -45,7 +46,7 @@ Repo: https://github.com/saumitra-rajput/my-azure
 ---
 
 ### 🔹 Linux Administration Lab
-Practical Linux administration, including user management, file permissions, services, SSH, and log troubleshooting.
+Practical Linux administration including user management, file permissions, services, SSH, and log troubleshooting.
 
 Repo: https://github.com/saumitra-rajput/my-linux
 
