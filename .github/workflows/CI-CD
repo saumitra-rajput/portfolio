@@ -1,10 +1,10 @@
-name: GitHub Page deployment
+name: GitHub Page
 
 on: 
   push:
-    branch: [testing]
-    path:
-      - "**.html"
+    branch: [main]
+    # path:
+    #   - "**.html"
   workflow_dispatch:
 
 permissions:
