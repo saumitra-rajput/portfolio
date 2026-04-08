@@ -2,7 +2,7 @@ name: GitHub Page deployment
 
 on: 
   push:
-    branch: [testing]
+    branch: [main]
     path:
       - "**.html"
   workflow_dispatch:
