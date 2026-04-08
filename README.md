@@ -1,5 +1,6 @@
-# :octocat: Saumitra Rajput – Azure Cloud Engineer Portfolio
 
+#  Saumitra Rajput – Azure Cloud Engineer Portfolio
+:octocat:
 
 [![GitHub Page](https://github.com/saumitra-rajput/portfolio/actions/workflows/CI-CD.yml/badge.svg)](https://github.com/saumitra-rajput/portfolio/actions/workflows/CI-CD.yml)
 Welcome to my professional portfolio website.
