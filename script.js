@@ -13,9 +13,9 @@
 const PROFILE = {
     // Basic Info
     name: "Saumitra Rajput",
-    role: "Azure Administrator & Cloud Engineer",
-    shortRole: "Cloud & DevOps Engineer",
-    location: "Lucknow, Uttar Pradesh India",
+    role: "Cloud & DevOps Engineer",
+    shortRole: "5x Azure Certified | 2x GitHub Certified",
+    location: "Lucknow, Uttar Pradesh India (Open to Remote)",
     email: "saumitrarajput3jan@gmail.com",
     
     // Social Links
@@ -30,117 +30,150 @@ const PROFILE = {
     // Skills Configuration
     skills: {
         visual: [
-            { icon: '<i class="fa-brands fa-linux"></i>', name: 'Linux' },
-            { icon: '<i class="fa-brands fa-aws"></i>', name: 'AWS' },
             { icon: '<i class="fa-brands fa-microsoft"></i>', name: 'Azure' },
             { icon: '<i class="fa-brands fa-docker"></i>', name: 'Docker' },
-            { icon: '<i class="fa-brands fa-git-alt"></i>', name: 'Git' },
+            { icon: '<i class="fa-solid fa-cubes"></i>', name: 'K8s' },
+            { icon: '<i class="fa-solid fa-code-branch"></i>', name: 'Terraform' },
+            { icon: '<i class="fa-solid fa-gears"></i>', name: 'Ansible' },
             { icon: '<i class="fa-brands fa-github"></i>', name: 'GitHub' },
-            { icon: '<i class="fa-solid fa-gears"></i>', name: 'CI/CD' },
-            { icon: '<i class="fa-solid fa-dharmachakra"></i>', name: 'K8s' }
+            { icon: '<i class="fa-brands fa-linux"></i>', name: 'Linux' },
+            { icon: '<i class="fa-solid fa-chart-line"></i>', name: 'Prometheus' }
         ],
         list: [
-            { title: 'Microsoft Azure Cloud', desc: 'VMs, Storage Accounts, VNets, NSG, Azure AD, App Services', percent: '85%' },
-            { title: 'AWS Cloud', desc: 'EC2, S3, IAM, VPC', percent: '60%' },   
-            { title: 'Linux Administration', desc: 'Users, Permissions, Processes, Networking, Services, Monitoring', percent: '90%' },
-            { title: 'DevOps & Automation', desc: 'GitHub, CI/CD Concepts, Bash Scripting, YAML, Azure DevOps Basics', percent: '72%' },
-            { title: 'Containers & Virtualization', desc: 'Docker, Docker Compose, Images, Volumes, Networking', percent: '60%' },
-            { title: 'Infrastructure & System Management', desc: 'Server Setup, Nginx, Apache, System Health Scripts, Troubleshooting', percent: '84%' }
+            { title: 'Microsoft Azure Cloud', desc: 'VMs, VNet, Entra ID, RBAC, PIM, Azure Policy, Azure CLI', percent: '90%' },
+            { title: 'Docker & Containerization', desc: 'Dockerfiles, Docker Compose, Images, Volumes, Networking', percent: '85%' },
+            { title: 'Kubernetes', desc: 'Pods, Deployments, Services, HPA, PV/PVC, KIND', percent: '80%' },
+            { title: 'Infrastructure as Code', desc: 'Terraform (AWS EC2, VPC), Ansible (Playbooks, Inventory)', percent: '85%' },
+            { title: 'CI/CD & DevSecOps', desc: 'GitHub Actions, 8-stage security pipelines, Trivy, Bandit, Gitleaks', percent: '85%' },
+            { title: 'Linux Administration', desc: 'Users, Permissions, Processes, Services, Bash Scripting', percent: '90%' },
+            { title: 'Monitoring & Observability', desc: 'Prometheus, Grafana, Loki, cAdvisor, Node Exporter', percent: '75%' },
+            { title: 'AWS Cloud', desc: 'EC2, S3, IAM, VPC', percent: '70%' }
         ]
     },
 
-    // Projects Configuration
+    // Projects Configuration - Updated with latest DevOps projects
     projects: [
         {
-          title: 'Linux Administration (MyLinux)',
-          description: 'Hands-on Linux administration project covering user and group management, permissions, process monitoring, package management, service configuration, networking basics, and shell scripting. Built as a structured lab environment to strengthen system-level troubleshooting and automation skills for DevOps.',
-          imageUrl: 'https://saumitra-rajput.github.io/portfolio/assets/images/linux.webp', 
-          tags: ['Linux', 'User Management', 'Networking', 'Linux Admin', 'Troubleshooting'],
-          link: 'https://github.com/saumitra-rajput/my-linux'
+            title: 'Notes App - Full DevOps Project',
+            description: 'Full-stack notes app (Django/React) with complete DevOps pipeline: Terraform (IaC) → Ansible (Config Mgmt) → Docker → Kubernetes (HPA) → Prometheus/Grafana/Loki monitoring.',
+            imageUrl: 'https://saumitra-rajput.github.io/portfolio/assets/images/azure.webp',
+            tags: ['Terraform', 'Ansible', 'Docker', 'Kubernetes', 'Prometheus', 'Grafana'],
+            link: 'https://github.com/saumitra-rajput/notes-app'
         },
         {
-          title: 'Shell Scripting',
-          description: 'Developed a modular Bash script to monitor system health including CPU usage, memory consumption, disk utilization, uptime, and top resource-intensive processes. Implemented strict error handling using set -euo pipefail and structured functions for production-ready automation.',
-          imageUrl: 'https://saumitra-rajput.github.io/portfolio/assets/images/bash.webp',
-          tags: ['Bash Scripting', 'Linux', 'Automation', 'System Monitoring'],
-          link: 'https://github.com/saumitra-rajput/bash-scripting'
+            title: 'DevSecOps Pipeline',
+            description: 'End-to-end CI/CD DevSecOps pipeline with GitHub Actions - 8-stage security scanning, testing, containerization, and automated deployment to AWS EC2 on port 80.',
+            imageUrl: 'https://saumitra-rajput.github.io/portfolio/assets/images/azure.webp',
+            tags: ['GitHub Actions', 'Docker', 'AWS EC2', 'Trivy', 'Bandit', 'Gitleaks'],
+            link: 'https://github.com/saumitra-rajput/DevSecOps'
         },
         {
-          title: 'Azure Cloud Infrastructure Deployment',
-          description: 'Provisioned and managed Azure Virtual Machines, Storage Accounts, VNets, and NSGs. Configured secure inbound rules and deployed a web server (Nginx) to host applications while following cloud security best practices.',
-          imageUrl: 'https://saumitra-rajput.github.io/portfolio/assets/images/azure.webp',
-          tags: ['Microsoft Azure', 'VMs', 'Networking', 'Beginner-Advance-Expert'],
-          link: 'https://github.com/saumitra-rajput/my-azure'
+            title: 'WanderlustAI',
+            description: 'AI-powered travel assistant with modern tech stack and cloud deployment.',
+            imageUrl: 'https://saumitra-rajput.github.io/portfolio/assets/images/azure.webp',
+            tags: ['AI/ML', 'Cloud', 'API Integration'],
+            link: 'https://github.com/saumitra-rajput/WanderlustAI'
         },
         {
-          title: 'Microsoft Azure Certifications (5x Certified) (2xGitHub Certified)',
-          description: 'Earned multiple Microsoft Azure certifications validating expertise in Azure administration, AI engineering, and cloud services. Demonstrates strong understanding of Azure infrastructure, security, identity management, and cloud best practices.',
-          imageUrl: 'https://saumitra-rajput.github.io/portfolio/assets/images/cert.webp',
-          tags: ['AZ-104', 'AZ-500', 'AZ-900', 'AI-900', 'SC-900', 'GH-900', 'GH-200'],
-          link: 'https://learn.microsoft.com/en-us/users/saumitrarajput-5854/credentials/certifications'
-
+            title: 'E-commerce App',
+            description: 'Full-stack e-commerce application with secure payment integration and modern architecture.',
+            imageUrl: 'https://saumitra-rajput.github.io/portfolio/assets/images/azure.webp',
+            tags: ['React', 'Node.js', 'MongoDB', 'Stripe'],
+            link: 'https://github.com/saumitra-rajput/E-commerce-app'
+        },
+        {
+            title: 'Bash Scripting & Automation',
+            description: 'Production-ready Bash scripts for backup automation, log rotation, cron scheduling, system health monitoring, and resource tracking.',
+            imageUrl: 'https://saumitra-rajput.github.io/portfolio/assets/images/bash.webp',
+            tags: ['Bash', 'Linux', 'Cron', 'System Monitoring'],
+            link: 'https://github.com/saumitra-rajput/bash-scripting'
+        },
+        {
+            title: 'Azure Infrastructure & IAM',
+            description: 'Hands-on implementation of Azure VMs, VNet Peering, VPN Gateways, NSG, Azure AD, RBAC, PIM, and Azure Policy for enterprise cloud security.',
+            imageUrl: 'https://saumitra-rajput.github.io/portfolio/assets/images/azure.webp',
+            tags: ['Azure', 'Terraform', 'Azure CLI', 'RBAC', 'PIM'],
+            link: 'https://github.com/saumitra-rajput/my-azure'
+        },
+        {
+            title: 'Linux Administration Lab',
+            description: 'Comprehensive Linux administration covering user/group management, file permissions, process monitoring, package management, service configuration, and networking basics.',
+            imageUrl: 'https://saumitra-rajput.github.io/portfolio/assets/images/linux.webp',
+            tags: ['Linux', 'User Management', 'Networking', 'Systemd'],
+            link: 'https://github.com/saumitra-rajput/my-linux'
+        },
+        {
+            title: 'Microsoft & GitHub Certifications',
+            description: '5x Microsoft Azure Certified (AZ-104, AZ-500, AZ-900, AI-900, SC-900) and 2x GitHub Certified (Foundations, Actions).',
+            imageUrl: 'https://saumitra-rajput.github.io/portfolio/assets/images/cert.webp',
+            tags: ['AZ-104', 'AZ-500', 'GH-900', 'GH-200', 'Cloud Security'],
+            link: 'https://learn.microsoft.com/en-us/users/saumitrarajput-5854/credentials/certifications'
         }
-
-        
     ],
 
-
-    // Timeline Configuration
+    // Timeline Configuration - Updated with DevOps transition
     timeline: [
         {
             category: 'education',
             icon: '🎓',
             year: '2018 – 2021',
-            title: 'Bachelor of Arts, (2018-2021)',
+            title: 'Bachelor of Arts',
             company: 'Lucknow University',
-            description: 'Developed strong analytical, communication, and critical thinking skills through academic study, while independently building technical expertise in Linux, Cloud Computing, and Python.'
+            description: 'Developed strong analytical, communication, and critical thinking skills while independently building technical expertise in Linux, Cloud Computing, and Python.'
         },
         {
             category: 'work',
             icon: '💼',
             year: 'June 2021 – June 2022',
-            title: 'Executive – (Zomato Project)',
+            title: 'Executive – Zomato Project',
             company: 'Startek',
-            description: 'Handled customer operations across India and UAE regions, resolving high-volume service issues while maintaining SLA compliance. Contributed to process optimization within the Rider Assert system, focusing on digital efficiency and automation improvements. Recognized as Winner of the “All Ideas Matter” Contest (May 26, 2022) for innovation-driven process enhancement.',
-            skills: ['Incident Management', 'Process Improvement', 'SLA Management', 'Operations Support', 'Automation Mindset']
+            description: 'Handled customer operations across India and UAE regions, resolving high-volume service issues while maintaining SLA compliance. Recognized as Winner of the "All Ideas Matter" Contest for innovation-driven process enhancement.',
+            skills: ['Incident Management', 'Process Improvement', 'SLA Management', 'Operations Support']
         },
         {
             category: 'work',
             icon: '💼',
-            year: 'Nov 2022 – Feb 2026',
-            title: 'Analyst – Cloud Engineer (Tenet Healthcare Project)',
-            company: 'HCL Technologies',
-            description: 'Managed and supported enterprise-scale Azure cloud infrastructure including Virtual Machines, VNets, Load Balancers, NSGs, Azure SQL VMs, DNS, Policies, and Subscriptions. Worked extensively on Azure IAM (Azure AD, RBAC, PIM, Access Policies, Storage, VMs) to ensure secure access governance. Configured VNET peering (regional & global), P2S/S2S VPN, Application Gateway, and Availability Sets. Performed backup, disaster recovery, and cross-region replication for critical workloads. Resolved cloud and application incidents using ServiceNow and collaborated with development teams for provisioning and environment support using Azure CLI.',
-            skills: ['Microsoft Azure', 'Azure AD & RBAC', 'Azure Storage and Security', 'VM,VNET,NSG,WAF,ASG', 'IAM & Access Policy', 'Azure CLI', 'ServiceNow']
-        },                  
+            year: 'Nov 2022 – Present',
+            title: 'Analyst – Cloud Engineer',
+            company: 'HCL Technologies (Tenet Healthcare Project)',
+            description: 'Manage enterprise Azure infrastructure including VMs, VNets, NSGs, Azure SQL VMs, DNS, Policies, and Subscriptions. Work on Azure IAM (Entra ID, RBAC, PIM) and configure VNET peering, VPN, Application Gateway. Perform backup, disaster recovery, and cross-region replication.',
+            skills: ['Azure', 'Entra ID', 'RBAC', 'PIM', 'VNet', 'VPN', 'Azure CLI', 'ServiceNow']
+        },
         {
-            category: 'Upskilling',
+            category: 'project',
+            icon: '🚀',
+            year: '2025 – Present',
+            title: 'DevOps Engineering Journey',
+            company: 'Hands-on Projects',
+            description: 'Building end-to-end DevOps projects: Notes App (Terraform → Ansible → Docker → K8s → Monitoring) and DevSecOps pipeline (GitHub Actions with security scanning). Mastering Docker, Kubernetes, Terraform, Ansible, Prometheus, and Grafana.',
+            skills: ['Docker', 'Kubernetes', 'Terraform', 'Ansible', 'GitHub Actions', 'Prometheus', 'Grafana']
+        },
+        {
+            category: 'project',
             icon: '☁️',
             year: '2026 – Present',
-            title: 'Learning DevOps - Train with Shubham',
+            title: 'Learning Advanced DevOps',
             company: 'Train with Shubham',
-            description: 'Currently building expertise in Docker, GitHub, Kubernetes, Prometheus, Ansible, Terraform and Python for DevOps. Expanding knowledge toward automation, infrastructure as code, monitoring, and exploring Agentic AI applications in DevOps workflows.',
-            skills: ['Linux', 'Bash Scripting', 'Docker', 'Kubernetes', 'Ansible', 'Python', 'Monitoring', 'Azure','AWS EC2', 'GitHub']
+            description: 'Expanding knowledge in Infrastructure as Code, CI/CD security, monitoring stacks, and exploring Agentic AI applications in DevOps workflows.',
+            skills: ['Python', 'Helm', 'EKS', 'Datadog', 'GitOps']
         }
-
-
     ],
 
-    // About Section
+    // About Section - Updated
     about: {
-        intro: "I am a 5x Azure-certified Cloud Engineer with 2+ years of enterprise experience supporting production healthcare workloads. Experienced in managing Azure VMs, VNet Peering, VPN (P2S/S2S), Azure AD (Entra ID), RBAC, PIM, Azure Policy, and Disaster Recovery strategies.",
-        fullBio: "With hands-on experience in enterprise Azure environments at HCL Technologies, I have managed cloud infrastructure, identity governance, networking, backup, and cross-region replication for critical workloads. My foundation in infrastructure operations and cloud support has strengthened my understanding of system reliability, security, and scalability.",
-        currentFocus: "Currently strengthening DevOps fundamentals including Bash scripting, automation, GitHub Actions, Docker, Kubernetes, monitoring tools, and infrastructure best practices.",
-        careerGoal: "To transition into a DevOps Engineer role by leveraging my Azure expertise, Linux administration skills, and automation mindset to design scalable, secure, and resilient cloud-native infrastructure solutions."
-
+        intro: "I am a 5x Azure-certified Cloud Engineer with 3+ years of enterprise experience at HCLTech, actively transitioning into DevOps. Experienced in Azure infrastructure, IAM, networking, and disaster recovery.",
+        fullBio: "My expertise includes Azure VMs, VNet Peering, VPN, Entra ID, RBAC, PIM, and Azure Policy. I have hands-on DevOps skills in Docker, Kubernetes, Terraform, Ansible, GitHub Actions, Prometheus, and Grafana. I build end-to-end automation pipelines, infrastructure as code, and cloud-native solutions.",
+        currentFocus: "Currently building end-to-end DevOps projects including Notes App (Terraform → Ansible → Docker → K8s → Monitoring) and DevSecOps pipeline with GitHub Actions.",
+        careerGoal: "To secure a DevOps Engineer role where I can apply my cloud expertise, automation skills, and DevOps practices to build scalable, secure, and resilient infrastructure."
     },
 
-    // Availability Tags
+    // Availability Tags - Updated
     availability: [
         "Azure Administrator",
-        "Azure Cloud Engineer",
         "Cloud Engineer",
-        "Jr. DevOps Engineer"
+        "Jr. DevOps Engineer",
+        "DevOps Intern",
+        "Azure Cloud Engineer"
     ]
 };
 
@@ -181,7 +214,7 @@ class ProfileRenderer {
                     <div class="skill-icon">${s.icon}</div>
                     <div class="skill-name">${s.name}</div>
                 </div>
-            `).join('') +`<div class="skills-center">☁</div>`;
+            `).join('') + `<div class="skills-center">☁</div>`;
         }
 
         if (list) {
@@ -198,38 +231,8 @@ class ProfileRenderer {
     }
 
     /* -------- Projects Renderer -------- */
-    /*
     renderProjects() {
         const grid = document.getElementById('portfolioGrid');
-        if (!grid) return;
-
-        grid.innerHTML = this.config.projects.map(p => `
-            <a href="${p.link}" target="_blank" class="portfolio-link">
-                <div class="portfolio-card">
-                    <div class="portfolio-image">
-                        <img src="${p.imageUrl}" alt="${p.title}" loading="lazy">
-                    </div>
-                    <div class="portfolio-content">
-                        <h3>${p.title}</h3>
-                        <div class="spacer"></div>
-                        <p>${p.description}</p>
-                        <div class="spacer"></div>
-                        <div class="portfolio-tags">
-                            ${p.tags.map(t => `<span class="tag">${t}</span>`).join('')}
-                        </div>
-                    </div>
-                </div>
-            </a>
-        `).join('');
-    }
-    */
-
-    /* -------- Projects Renderer -------- */
-    renderProjects() {
-        const grid = document.getElementById('portfolioGrid');
-        console.log('renderProjects called');
-        console.log('Grid element:', grid);
-        console.log('Projects data:', this.config.projects);
         
         if (!grid) {
             console.error('❌ portfolioGrid not found!');
@@ -241,12 +244,7 @@ class ProfileRenderer {
             return;
         }
 
-        console.log(`Rendering ${this.config.projects.length} projects`);
-
         grid.innerHTML = this.config.projects.map((p, index) => {
-            console.log(`Project ${index}:`, p.title);
-            console.log(`  imageUrl:`, p.imageUrl);
-            
             return `
             <a href="${p.link}" target="_blank" class="portfolio-link">
                 <div class="portfolio-card">
@@ -269,7 +267,6 @@ class ProfileRenderer {
             </a>
         `}).join('');
     }
-
 
     /* -------- Timeline Renderer -------- */
     renderTimeline(filter = 'all') {
@@ -324,7 +321,7 @@ class ProfileRenderer {
                     <i class="fa-solid fa-file-arrow-down"></i> Resume
                 </a>
                 <a href="${this.config.social.linkhub}" class="contact-btn">
-                    <i class="fa-solid fa-address-card"></i> LinkHub
+                    <i class="fa-solid fa-address-card"></i> Portfolio
                 </a>
             `;
         }
